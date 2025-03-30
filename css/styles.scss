@@ -167,8 +167,28 @@ button {
         font-size: 15px;
     }
 }
-
-
+header{
+    i{
+        position: relative;
+        // background-color: purple;
+    }
+}
+.shopping-cart__badge{
+    background-color: red;
+    display: flex;
+    color: white;
+    position: absolute;
+    right: -15px;
+    top: -10px;
+    font-size: 12px;
+    justify-content: center;
+    min-width: 20px;
+    min-height: 20px;
+    padding: 2px;
+    text-align: center;
+    align-items: center;
+    border-radius: 100px;
+}
 .cart {
     width: 500px;
     background-color: $banner-text;
@@ -179,6 +199,8 @@ button {
     top: 100px;
     right: -100%; 
     box-shadow: -19px -1px 22px -15px $shadow-black;
+
+    right: 0; //ELIMINAR
     
     h2{
         width: 100%;
@@ -189,7 +211,7 @@ button {
     }
     
     div {
-        border-bottom: 1px solid $border-gray;
+        // border-bottom: 1px solid $border-gray;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -218,7 +240,28 @@ button {
     &.active {
         right: 0; 
       }
+
+
+    .cart__product{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+
+        // background-color: red;
+        
+        .cart__product--text-contariner{
+            gap: 10px;
+        }
+    }
+
 }
+// Agregar línea para calcular total
+.cart > *:last-child {
+    border-bottom: 1px solid $border-gray;
+
+  }
+
 
 
 @mixin responsive($breakpoint) {

@@ -22,8 +22,9 @@
     <header>
       <i><img src="assets/menu.svg" alt="Icono Menu" /></i>
       <img src="assets/red_logo.svg" alt="Logo Libreria" />
-      <i
-        ><img
+      <i>
+        <div class="shopping-cart__badge">1</div>
+        <img
           id="shopping-cart-icon"
           src="assets/shopping-cart.svg"
           alt="Icono Carrito"
@@ -42,7 +43,7 @@
             <h3>Surely You're Joking, Mr. Feynman!</h3>
             <p>100$</p>
           </div>
-          <button>Comprar</button>
+          <button>Añadir al carrito</button>
         </article>
 
         <article class="book">
@@ -54,7 +55,7 @@
             </h3>
             <p>100$</p>
           </div>
-          <button>Comprar</button>
+          <button>Añadir al carrito</button>
         </article>
 
         <article class="book">
@@ -63,7 +64,7 @@
             <h3>Quantum</h3>
             <p>100$</p>
           </div>
-          <button>Comprar</button>
+          <button>Añadir al carrito</button>
         </article>
 
         <article class="book">
@@ -75,7 +76,7 @@
             </h3>
             <p>100$</p>
           </div>
-          <button>Comprar</button>
+          <button>Añadir al carrito</button>
         </article>
 
         <article class="book">
@@ -87,7 +88,7 @@
             </h3>
             <p>100$</p>
           </div>
-          <button>Comprar</button>
+          <button>Añadir al carrito</button>
         </article>
 
         <article class="book">
@@ -96,7 +97,7 @@
             <h3>General Relativity: The Theoretical Minimum</h3>
             <p>100$</p>
           </div>
-          <button>Comprar</button>
+          <button>Añadir al carrito</button>
         </article>
 
         <article class="book">
@@ -105,7 +106,7 @@
             <h3>Quantum Mechanics: The Theoretical Minimum</h3>
             <p>100$</p>
           </div>
-          <button>Comprar</button>
+          <button>Añadir al carrito</button>
         </article>
 
         <article class="book">
@@ -117,17 +118,18 @@
             </h3>
             <p>100$</p>
           </div>
-          <button>Comprar</button>
+          <button>Añadir al carrito</button>
         </article>
       </section>
 
       <section class="cart">
         <h2>Carrito</h2>
-        <div>
-          <img src="imgs/quantum.jpeg" alt="" />
-          <p>Quantum</p>
-          <p>$ 60 USD</p>
-          <button>Comprar</button>
+        <article class="cart__product">
+          <div class="cart__product--text-contariner">
+            <img src="imgs/quantum.jpeg" alt="" />
+            <p>Quantum</p>
+            <p>$ 60 USD</p>
+          </div>
 
           <i
             ><img
@@ -135,7 +137,22 @@
               alt="Icono Remover"
               class="delete-icon"
           /></i>
-        </div>
+        </article>
+
+        <article class="cart__product">
+          <div class="cart__product--text-contariner">
+            <img src="imgs/surely_youre_joking_mr_feynman.jpg" alt="" />
+            <p>Surely You're Joking, Mr. Feynman!</p>
+            <p>$ 100 USD</p>
+          </div>
+
+          <i
+            ><img
+              src="assets/x-circle.svg"
+              alt="Icono Remover"
+              class="delete-icon"
+          /></i>
+        </article>
       </section>
     </main>
     <script type="module" src="./js/main.js"></script>

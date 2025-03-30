@@ -4,6 +4,8 @@ console.log("El archivo cart-toggle.js se ha cargado correctamente"); // Mensaje
 //   console.log("¡El clic en el carrito funciona correctamente!"); // Mensaje de confirmación
 // });
 
+// ----------- TOGGLE SHOPPING CART
+
 // Obtener elementos del DOM
 const cartIcon = document.getElementById("shopping-cart-icon");
 const cartSection = document.querySelector(".cart");
@@ -20,6 +22,8 @@ document.addEventListener("click", (e) => {
     cartSection.classList.remove("active");
   }
 });
+
+// ----------- COUNT ELEMENTS IN SHOPPING CART
 
 // Opcional: Cerrar al hacer clic en la X del carrito
 // document.querySelectorAll(".delete-icon").forEach((icon) => {

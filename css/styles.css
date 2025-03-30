@@ -130,6 +130,27 @@ button {
   font-size: 15px;
 }
 
+header i {
+  position: relative;
+}
+
+.shopping-cart__badge {
+  background-color: red;
+  display: flex;
+  color: white;
+  position: absolute;
+  right: -15px;
+  top: -10px;
+  font-size: 12px;
+  justify-content: center;
+  min-width: 20px;
+  min-height: 20px;
+  padding: 2px;
+  text-align: center;
+  align-items: center;
+  border-radius: 100px;
+}
+
 .cart {
   width: 500px;
   background-color: aliceblue;
@@ -140,6 +161,7 @@ button {
   top: 100px;
   right: -100%;
   box-shadow: -19px -1px 22px -15px rgba(0, 0, 0, 0.5);
+  right: 0;
 }
 .cart h2 {
   width: 100%;
@@ -149,7 +171,6 @@ button {
   box-sizing: border-box;
 }
 .cart div {
-  border-bottom: 1px solid #333;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -171,6 +192,19 @@ button {
 }
 .cart.active {
   right: 0;
+}
+.cart .cart__product {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.cart .cart__product .cart__product--text-contariner {
+  gap: 10px;
+}
+
+.cart > *:last-child {
+  border-bottom: 1px solid #333;
 }
 
 @media (max-width: 768px) {
