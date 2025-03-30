@@ -22,11 +22,11 @@ document.addEventListener("click", (e) => {
 });
 
 // Opcional: Cerrar al hacer clic en la X del carrito
-document.querySelectorAll(".delete-icon").forEach((icon) => {
-  icon.addEventListener("click", () => {
-    cartSection.classList.remove("active");
-  });
-});
+// document.querySelectorAll(".delete-icon").forEach((icon) => {
+//   icon.addEventListener("click", () => {
+//     cartSection.classList.remove("active");
+//   });
+// });
 
 // ------------ Instrucciones
 // 1.- El menú debe de abrirse al dar click en el carrito ✅

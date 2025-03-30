@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .cart i, header i {
   width: 20px;
   cursor: pointer;
@@ -41,6 +42,24 @@ header i img {
   width: 100%;
 }
 
+button {
+  /* Reset básico */
+  background: transparent;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  cursor: pointer;
+  /* Quitar efectos específicos de navegadores */
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  /* Opcional: reset de otros estilos */
+  box-shadow: none;
+  text-decoration: none;
+}
+
 .banner {
   width: 100%;
   box-sizing: border-box;
@@ -66,22 +85,45 @@ header i img {
   width: 100%;
   box-sizing: border-box;
   margin: 0 auto;
-  padding: 20px;
+  gap: 50px;
+  padding: 25px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 .products article {
   text-align: center;
 }
+.products .book {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+}
+.products .book .book__text {
+  display: flex;
+  flex-direction: column;
+}
+.products .book .book__text > * {
+  margin: 0; /* Elimina márgenes por defecto */
+}
+.products .book button {
+  width: 100%;
+  height: 30px;
+  color: white;
+  border-color: none;
+  background-color: #333;
+}
+.products .book button:hover {
+  background-color: #BD3339;
+}
 .products img {
   width: 50%;
   margin-bottom: 15px;
-  cursor: pointer;
 }
 .products h3 {
   font-size: 17px;
   margin-bottom: 5px;
-  cursor: pointer;
 }
 .products p {
   font-weight: 300;
