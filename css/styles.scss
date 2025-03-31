@@ -35,8 +35,11 @@ img{
     width: 100px;
 }
 
-
+main{
+    padding-top: 70px;
+}
 header{
+    position: fixed;
     width: 100%;
     padding: 20px 50px;
     background-color: $secondary-color;
@@ -178,7 +181,7 @@ header{
     display: flex;
     color: white;
     position: absolute;
-    right: -15px;
+    right: -18px;
     top: -10px;
     font-size: 12px;
     justify-content: center;
@@ -190,6 +193,7 @@ header{
     border-radius: 100px;
 }
 .cart {
+    position: relative;
     width: 500px;
     background-color: $banner-text;
     padding: 25px;
@@ -199,8 +203,6 @@ header{
     top: 100px;
     right: -100%; 
     box-shadow: -19px -1px 22px -15px $shadow-black;
-
-    right: 0; //ELIMINAR
     
     h2{
         width: 100%;
@@ -262,6 +264,13 @@ header{
 
   }
 
+.cart__close-window-button{
+    position: absolute;
+    width: 10px;
+    right: 25px;
+    cursor: pointer;
+
+}
 
 
 @mixin responsive($breakpoint) {

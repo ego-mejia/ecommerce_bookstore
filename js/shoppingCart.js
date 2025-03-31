@@ -17,26 +17,26 @@ cartIcon.addEventListener("click", (e) => {
 });
 
 // Cerrar carrito al hacer clic fuera de él
-document.addEventListener("click", (e) => {
-  if (!cartSection.contains(e.target) && !cartIcon.contains(e.target)) {
-    cartSection.classList.remove("active");
-  }
-});
+// document.addEventListener("click", (e) => {
+//   if (!cartSection.contains(e.target) && !cartIcon.contains(e.target)) {
+//     cartSection.classList.remove("active");
+//   }
+// });
 
 // ----------- COUNT ELEMENTS IN SHOPPING CART
 
 // Opcional: Cerrar al hacer clic en la X del carrito
-// document.querySelectorAll(".delete-icon").forEach((icon) => {
-//   icon.addEventListener("click", () => {
-//     cartSection.classList.remove("active");
-//   });
-// });
+document.querySelectorAll(".cart__close-window-button").forEach((icon) => {
+  icon.addEventListener("click", () => {
+    cartSection.classList.remove("active");
+  });
+});
 
 // ------------ Instrucciones
 // 1.- El menú debe de abrirse al dar click en el carrito ✅
 // 2.- El menú debe de cerrarse:
 //    2.1- Dar click en el carrito nuevamente. ✅
-//    2.2- Dar click en la X (Se debe de agregar la X).
+//    2.2- Dar click en la X (Se debe de agregar la X). ✅
 //    2.23 Dar click en fuera del carrito. ✅
 
 // --- Otras funcionalidades ---
