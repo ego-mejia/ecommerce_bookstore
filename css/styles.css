@@ -108,7 +108,7 @@ button {
   margin: 0; /* Elimina márgenes por defecto */
 }
 .products .book button {
-  width: 100%;
+  width: 80%;
   height: 30px;
   color: white;
   border-color: none;
