@@ -272,7 +272,8 @@ header i {
 }
 .burger-menu {
   position: relative;
-  width: 500px;
+  max-width: 500px;
+  width: 100%;
   background-color: aliceblue;
   padding: 25px;
   box-sizing: border-box;
@@ -317,6 +318,7 @@ header i {
 .burger-menu__categories {
   display: flex;
   flex-direction: column;
+  text-align: center;
 }
 .burger-menu__categories h3:hover {
   cursor: pointer;

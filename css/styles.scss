@@ -347,7 +347,8 @@ header{
 
 .burger-menu {
     position: relative;
-    width: 500px;
+    max-width: 500px;
+    width: 100%;
     background-color: $banner-text;
     padding: 25px;
     box-sizing: border-box;
@@ -399,6 +400,7 @@ header{
     &__categories{
         display: flex;
         flex-direction: column;
+        text-align: center;
 
         h3:hover{
             cursor: pointer;
