@@ -281,6 +281,7 @@ header i {
   top: 77px;
   right: -100%;
   box-shadow: -19px -1px 22px -15px rgba(0, 0, 0, 0.5);
+  overflow-y: scroll;
 }
 .burger-menu h2 {
   width: 100%;
@@ -288,6 +289,7 @@ header i {
   font-size: 20px;
   padding: 25px 0;
   box-sizing: border-box;
+  border-bottom: 1px solid #333;
 }
 .burger-menu div {
   display: flex;
@@ -306,10 +308,17 @@ header i {
 .burger-menu.active {
   left: 0;
 }
-
 .burger-menu__close-window-button {
   position: absolute;
   width: 10px;
   right: 25px;
   cursor: pointer;
+}
+.burger-menu__categories {
+  display: flex;
+  flex-direction: column;
+}
+.burger-menu__categories h3:hover {
+  cursor: pointer;
+  color: #BD3339;
 }/*# sourceMappingURL=styles.css.map */
