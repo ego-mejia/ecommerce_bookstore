@@ -343,3 +343,56 @@ header{
         }
     }
 }
+
+
+.burger-menu {
+    position: relative;
+    width: 500px;
+    background-color: $banner-text;
+    padding: 25px;
+    box-sizing: border-box;
+    height: 100%;
+    position: fixed;
+    top: 77px;
+    right: -100%; 
+    box-shadow: -19px -1px 22px -15px $shadow-black;
+    
+    h2{
+        width: 100%;
+        text-align: center;
+        font-size: 20px;
+        padding: 25px 0;
+        box-sizing: border-box;
+    }
+    
+    div {
+        // border-bottom: 1px solid $border-gray;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 0;
+    }
+    
+    
+    img{
+        width: 60px;
+    }
+    
+    i{
+        @extend %icon-style;
+        top: 100px;
+        right: 0%;
+        cursor: pointer;
+    }
+    &.active {
+        left: 0; 
+      }
+}
+
+.burger-menu__close-window-button{
+    position: absolute;
+    width: 10px;
+    right: 25px;
+    cursor: pointer;
+
+}

@@ -1,5 +1,5 @@
 @charset "UTF-8";
-.cart i, header i {
+.burger-menu i, .cart i, header i {
   width: 20px;
   cursor: pointer;
   display: inline-block;
@@ -269,4 +269,47 @@ header i {
   .cart img {
     width: 100px;
   }
+}
+.burger-menu {
+  position: relative;
+  width: 500px;
+  background-color: aliceblue;
+  padding: 25px;
+  box-sizing: border-box;
+  height: 100%;
+  position: fixed;
+  top: 77px;
+  right: -100%;
+  box-shadow: -19px -1px 22px -15px rgba(0, 0, 0, 0.5);
+}
+.burger-menu h2 {
+  width: 100%;
+  text-align: center;
+  font-size: 20px;
+  padding: 25px 0;
+  box-sizing: border-box;
+}
+.burger-menu div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+.burger-menu img {
+  width: 60px;
+}
+.burger-menu i {
+  top: 100px;
+  right: 0%;
+  cursor: pointer;
+}
+.burger-menu.active {
+  left: 0;
+}
+
+.burger-menu__close-window-button {
+  position: absolute;
+  width: 10px;
+  right: 25px;
+  cursor: pointer;
 }/*# sourceMappingURL=styles.css.map */
