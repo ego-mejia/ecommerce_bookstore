@@ -252,9 +252,10 @@ header{
 
         // background-color: red;
         
-        .cart__product--text-contariner{
-            gap: 10px;
-        }
+
+    }
+    .cart__product--text-container{
+        gap: 10px;
     }
 
 }
@@ -409,3 +410,10 @@ header{
     }
 }
 
+footer{
+    background-color: antiquewhite;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

@@ -204,7 +204,7 @@ header i {
   justify-content: space-between;
   align-items: center;
 }
-.cart .cart__product .cart__product--text-contariner {
+.cart .cart__product--text-container {
   gap: 10px;
 }
 
@@ -323,4 +323,12 @@ header i {
 .burger-menu__categories h3:hover {
   cursor: pointer;
   color: #BD3339;
+}
+
+footer {
+  background-color: antiquewhite;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }/*# sourceMappingURL=styles.css.map */
